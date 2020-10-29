@@ -52,7 +52,7 @@
                 <teacher>Florindo</teacher>
             </hours>
         </day>
-        <day number="3">
+        <day number="3">Miercoles
             <hours number="1">
                 <subject>BaseDeDatos</subject>
                 <teacher>Cuadrado</teacher>
@@ -78,7 +78,7 @@
                 <teacher>Cuadrado</teacher>
             </hours>  
         </day>
-        <day number="4">
+        <day number="4">Jueves
             <hours number="1">
                 <subject>Seguridad</subject>
                 <teacher>Fidel</teacher>
@@ -104,7 +104,7 @@
                 <teacher>Florindo</teacher>
             </hours>
         </day>
-        <day number="5">
+        <day number="5">Viernes
             <hours number="1">
                 <subject>Sistemas</subject>
                 <teacher>Marisol</teacher>
