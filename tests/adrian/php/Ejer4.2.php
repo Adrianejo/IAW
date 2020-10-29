@@ -1,11 +1,8 @@
 <html>
-
 <head>
   <title>Problema</title>
 </head>
-
 <body>
-
   <?php
   $num = rand(1, 100);
   echo $num;
@@ -16,7 +13,5 @@
     echo "El número es mayor a 50.";
   }
   ?>
-
 </body>
-
 </html>
