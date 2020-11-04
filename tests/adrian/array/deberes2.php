@@ -1,5 +1,5 @@
 <?php
-//ARRAY EXAMPLES
+
 $numbers        = array(1, 2, 3, 5, 10, 20);
 
 
@@ -18,3 +18,5 @@ $asignaturas = array(
     'Segurida y alta disponibilidad',
     "Empresa"
 );
+echo "<pre>";
+echo "<p> Don o Doña<b>".getRandomArray($profesores). "</b> da clase de <b>".getRandomArray($asignaturas)."</b></p>";
