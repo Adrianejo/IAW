@@ -17,6 +17,11 @@ $asignaturas = array(
 );
 echo "<pre>";
 echo "<p> Don o Doña <b>".getRandomArray($profesores). "</b> da clase de <b>".getRandomArray($asignaturas)."</b></p>";
+echo "<p> Don o Doña <b>".getRandomArray($profesores). "</b> da clase de <b>".getRandomArray($asignaturas)."</b></p>";
+echo "<p> Don o Doña <b>".getRandomArray($profesores). "</b> da clase de <b>".getRandomArray($asignaturas)."</b></p>";
+echo "<p> Don o Doña <b>".getRandomArray($profesores). "</b> da clase de <b>".getRandomArray($asignaturas)."</b></p>";
+echo "<p> Don o Doña <b>".getRandomArray($profesores). "</b> da clase de <b>".getRandomArray($asignaturas)."</b></p>";
+echo "<p> Don o Doña <b>".getRandomArray($profesores). "</b> da clase de <b>".getRandomArray($asignaturas)."</b></p>";
 
 function getRandomArray($array){
     return $array[rand ( 0 , count ( $array ) - 1 )];
