@@ -13,11 +13,11 @@ $teams = array(
     'Cádiz'
 );
 $players = array(
-    'Player 1',
-    'Player 2',
-    'Player 3',
-    'Player 4',
-    'Player 5'
+    'Ocampos',
+    'Hazard',
+    'Dembele',
+    'Suarez',
+    'Victor Arribas'
 );
 echo "<pre>";
 echo "<p>El <b>".getRandomArray($teams). "</b> es infinitamente mejor que el <b>".getRandomArray($teams)."</b> y el <b>".getRandomArray($teams)."</b></p>";
