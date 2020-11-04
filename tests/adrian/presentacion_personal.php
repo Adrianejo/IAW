@@ -67,7 +67,7 @@
 ?>
 
 <br><br>
-<form action="presentacion-personal.php" method="post" name="contacto" id ="contacto" >
+<form action="presentacion_personal.php" method="post" name="contacto" id ="contacto" >
   <br>
   <textarea cols="50" rows="5" name="opinion"></textarea>
   <br>
