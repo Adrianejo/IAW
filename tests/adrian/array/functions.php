@@ -22,7 +22,7 @@ function sayWhatever($whatever){
 }
 openHtmlTag();
 openTag("p", "id1");
-
+sayHello();
 closeTag("p");
 openTag("p", "id2");
 sayWhatever("Estoy usando una función");
