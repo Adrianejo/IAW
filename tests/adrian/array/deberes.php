@@ -13,13 +13,14 @@ function closeTag($tog){
     echo "</".$tog.">";
 }
 function sayWhatever($whatever){
-	echo "<h1>".$whatever."</h1>";
+	echo "<p>".$whatever."</p>";
 }
 
 openHtmlTag();
-openTag("p", "id1");
+openTag("h1", "id1");
 sayWhatever("Este es el titulo");
-closeTag("p");
+closeTag("h1");
 openTag("p", "id2");
+sayWhatever("Hola este es el contenido");
 closeTag("p");
 closeHtmlTag();
