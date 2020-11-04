@@ -6,12 +6,6 @@ function openHtmlTag(){
 function closeHtmlTag(){
     echo "</html>";
 }
-function opentitle()¨{
-    echo "<title>"
-}
-function closetitle()¨{
-    echo "<title>"
-}
 function openTag($tag, $id, $class = "red"){
     echo "<".$tag." id=".$id." class=".$class.">";
 }
@@ -23,8 +17,6 @@ function sayWhatever($whatever){
 }
 
 openHtmlTag();
-opentitle();
-closetitle();
 openTag("h1", "id1");
 sayWhatever("Este es el titulo");
 closeTag("h1");
