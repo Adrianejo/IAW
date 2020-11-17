@@ -10,7 +10,7 @@
 
         $errores = [];
 
-        if($_POST["enviar"]){
+        if($_POST['enviar']){
 
             //COMPROBAR
             if($_POST['nombre'] == ""){
@@ -18,7 +18,7 @@
             }
         }
 
-        if($_POST["enviar"] && count($errores) == 0){
+        if($_POST['enviar'] && count($errores) == 0){
             echo "Formulario: ".$_POST['formulario']. " <br>";
             echo "Nombre de la fiesta: ".$_POST['nombre']. " <br>";
             echo "Numero de personas que acudiran: ".$_POST['personas']. " </br>";

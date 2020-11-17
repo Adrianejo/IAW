@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>uno</title>
+        <title> Ejer1 </title>
     </head>
     <body>
       <?php
@@ -21,7 +21,7 @@
       ?>
 
       <h1>Valores mayores que otros</h1>
-      <form action="1.php" method="POST" enctype="multipart/form-data">
+      <form action="ejer1.php" method="POST" enctype="multipart/form-data">
 
         Valor a: <input type="number" name="valora"></br>
 
