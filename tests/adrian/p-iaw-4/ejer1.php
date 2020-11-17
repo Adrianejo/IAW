@@ -19,8 +19,6 @@
             getGratherValue($a, $b);
         }else{
       ?>
-
-      <h1>Valores mayores que otros</h1>
       <form action="ejer1.php" method="POST" enctype="multipart/form-data">
 
         Valor a: <input type="number" name="valora"></br>
