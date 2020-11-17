@@ -20,8 +20,8 @@
 
         if($_POST["enviar"] && count($errores) == 0){
             echo "Formulario: ".$_POST['formulario']. " <br>";
-            echo "El nombre de la fiesta es: ".$_POST['nombre']. " <br>";
-            echo "El numero de personas que acudiran: ".$_POST['personas']. " </br>";
+            echo "Nombre de la fiesta: ".$_POST['nombre']. " <br>";
+            echo "Numero de personas que acudiran: ".$_POST['personas']. " </br>";
             echo "La fiesta sera: ".$_POST['publica']. " <br>";
             echo "El tipo de musica sera: ".$_POST['tipo']. " <br>";
 
@@ -43,7 +43,7 @@
         else{
         ?>
             <h1>Fiesta</h1>
-            <form action="alba-form.php" method="POST" enctype="multipart/form-data">
+            <form action="validacion-form.php" method="POST" enctype="multipart/form-data">
                 <?php
                     if(isset($errores['nombre'])){
                         echo "<p><b>".$errores['nombre']."</b></p>";
