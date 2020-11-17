@@ -5,14 +5,11 @@
     <body>
         <?php
 
-        //CONTROL DE ERRORES
-        //RESULTADO
 
         $errores = [];
 
         if($_POST['enviar']){
 
-            //COMPROBAR
             if($_POST['nombre'] == ""){
                 $errores['nombre'] = "El nombre de la fiesta es obligatorio";
             }
