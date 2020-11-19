@@ -3,7 +3,7 @@
         <title>Ejercicio FOR</title>
     </head>
     <body>
-        <h1>Sin Usar Funciones</h1>
+        <h1></h1>
         <?php
             $email = "florindo.lopdeleduca.jcyl.es";
 
