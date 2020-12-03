@@ -4,7 +4,6 @@
     <body>
         <ol>
         <?php
-        
             $provincias = [
                 "Salamanca",
                 "Zamora",
