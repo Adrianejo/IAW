@@ -14,8 +14,9 @@
                 "Soria",
                 "Ávila",
                 "Segovia"
-            ];
-
+            ]
+}
+}
             foreach ($provincias as $key => $value) {
                 echo "<li>".$value." ".$key."</li>";
             }

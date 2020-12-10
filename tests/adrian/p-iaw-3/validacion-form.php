@@ -8,14 +8,14 @@
 
         $errores = [];
 
-        if($_POST['enviar']){
+        if (isset($_POST['enviar'])){
 
             if($_POST['nombre'] == ""){
                 $errores['nombre'] = "El nombre de la fiesta es obligatorio";
             }
         }
 
-        if($_POST['enviar'] && count($errores) == 0){
+        if(isset($_POST['enviar']) && count($errores) == 0){
             echo "Formulario: ".$_POST['formulario']. " <br>";
             echo "Nombre de la fiesta: ".$_POST['nombre']. " <br>";
             echo "Numero de personas que acudiran: ".$_POST['personas']. " </br>";
@@ -48,7 +48,7 @@
                 ?>
                 Nombre de la fiesta: <input type='text' name='nombre'><br>
 
-                Numero de personas: <input type='number' name='personas'><br>
+                Numero de personas: <input type='number' name='personas' required='required'><br>
 
                 <input type='radio' name='publica' value='Publica' checked> Publica
                 <input type='radio'  name='publica' value='privada'> Privada<br>
@@ -64,8 +64,8 @@
 
                 Espacios:
                     <input type='checkbox' name='espacio[]' value='barras' > Barras
-                    <input type='checkbox'  name='espacio[]' value='escenarios' checked> Escenarios
-                    <input type='checkbox'  name='espacio[]' value='jardin'> Jardín
+                    <input type='checkbox'  name='espacio[]' value='escenarios' checked > Escenarios
+                    <input type='checkbox'  name='espacio[]' value='jardin' > Jardín
                     <input type='checkbox'  name='espacio[]' value='zonachill'> Zona Chill
                     <input type='checkbox'  name='espacio[]' value='etc'> Etc
                 <br><br>

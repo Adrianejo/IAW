@@ -30,7 +30,6 @@
   $carta1 = rand(1,10);
   $carta2 = rand(1,10);
   $carta3 = rand(1,10);
-
   $carta_alta = max($carta1, $carta2, $carta3);
 
   $imgsrc1 = "img/c".$carta1.".svg";
