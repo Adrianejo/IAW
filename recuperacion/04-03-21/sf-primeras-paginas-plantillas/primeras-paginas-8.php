@@ -26,12 +26,15 @@
 
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+$unicode=rand(128512,128586);
+$size= rand(200,800);
+
+echo '<p style="font-size:'.$size.'%">&#'.$unicode.';</p>';
 
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>
