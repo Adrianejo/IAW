@@ -23,13 +23,12 @@
   <h1>Mi segundo programa</h1>
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
-echo "   <href="primeras-paginas-3-2.php">";
+echo "   <a href=primeras-paginas-3-2.php>Ir al saludo</a>";
 
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>

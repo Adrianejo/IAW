@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <h1>Mi primer programa</h1>
 <?php
 
 print "  <p class=\"aviso\">¡Hola, mundo!</p>\n";
@@ -27,7 +28,7 @@ print "  <p class=\"aviso\">¡Hola, mundo!</p>\n";
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>

@@ -20,14 +20,16 @@
 </head>
 
 <body>
+<h1>Mi segundo programa</h1>
 <?php
 
 print "  <p class=\"aviso\">Hola, mundo</p>\n";
+echo "<a href=primeras-paginas-3-1.php>Volver al menu</a>";
 
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>

@@ -21,11 +21,14 @@
 
 <body>
   <h1>Dado digital</h1>
-
+ 
   <p>Actualice la página para mostrar un nuevo valor.</p>
+  <p>
+    <img src="img/<?php".$dado."?>.svg">
+  </p>
 
 <?php
-
+$dado = rand(1,6);
 print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
 
 ?>

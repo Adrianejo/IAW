@@ -1,6 +1,6 @@
 <?php
 /**
- * Primeras páginas. Sin formularios. 5 - primeras-paginas-5.php
+ * Primeras páginas. Sin formularios. 4 - primeras-paginas-4.php
  *
  * @author Escriba aquí su nombre
  *
@@ -11,7 +11,7 @@
 <head>
   <meta charset="utf-8">
   <title>
-    Dado digital gráfico.
+    Dado digital.
     Primeras páginas. Sin formularios.
     Escriba aquí su nombre
   </title>
@@ -20,12 +20,15 @@
 </head>
 
 <body>
-  <h1>Dado digital gráfico</h1>
-
+  <h1>Dado digital</h1>
+ 
   <p>Actualice la página para mostrar un nuevo valor.</p>
+  <p>
+    <img src="img/<?php".$dado."?>.svg">
+  </p>
 
 <?php
-
+$dado = rand(1,6);
 print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
 
 ?>
