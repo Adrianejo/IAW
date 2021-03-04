@@ -16,13 +16,13 @@
     Escriba aquí su nombre
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="mclibre-php-ejercicios.css" title="Color">
+  <link rel="stylesheet" href="primeras-paginas-2.css" title="Color">
 </head>
 
 <body>
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+print "  <p class=\"aviso\">¡Hola, mundo!</p>\n";
 
 ?>
 
