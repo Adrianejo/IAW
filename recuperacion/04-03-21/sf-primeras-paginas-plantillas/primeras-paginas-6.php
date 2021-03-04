@@ -26,12 +26,15 @@
 
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+$rgb1= rand(0,250);
+$rgb2= rand(0,250);
+$rgb3= rand(0,250);
 
+echo "Color: rgb($rgb1,$rgb2,$rgb3)";
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>
