@@ -26,12 +26,13 @@
 
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+$size= rand(200,800);
 
+echo ' <p style="font-size:'.$size.'%">¡Hola!</p>';
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>
