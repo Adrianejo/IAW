@@ -20,9 +20,11 @@
 </head>
 
 <body>
+  <h1>Mi segundo programa</h1>
 <?php
 
 print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+echo "   <href="primeras-paginas-3-2.php">";
 
 ?>
 

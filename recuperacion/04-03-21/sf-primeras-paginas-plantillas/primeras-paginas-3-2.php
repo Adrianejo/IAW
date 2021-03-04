@@ -22,7 +22,7 @@
 <body>
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+print "  <p class=\"aviso\">Hola, mundo</p>\n";
 
 ?>
 
