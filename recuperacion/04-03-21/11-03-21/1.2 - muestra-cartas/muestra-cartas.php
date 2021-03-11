@@ -1,10 +1,5 @@
 <?php
-/**
- * Muestra cartas - muestra-cartas.php
- *
- * @author Escriba aquí su nombre
- *
- */
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -25,11 +20,17 @@
 
 
 $cantidad= rand(3,12);
+$total=0;
 
 for ($i=0; $i <$cantidad ; $i++) { 
     $dado= rand(1,6);
     echo  "<img src='img/".$dado.".svg' >";
+    $total= $dado + $total;
 }
+
+echo "<p>He tirado el total de ".$cantidad." dados</p>";
+
+echo "<p>El total de dados es: ".$total."</p>";
 
 
 ?>
