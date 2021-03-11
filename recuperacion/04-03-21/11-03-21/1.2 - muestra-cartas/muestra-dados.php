@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <h1>Muestra cartas</h1>
+  <h1>Muestra dados</h1>
 
 <?php
 
