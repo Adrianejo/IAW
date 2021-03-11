@@ -25,15 +25,16 @@
 
 
 $cantidad= rand(3,12);
+$dado= rand(1,6);
 
 for ($i=0; $i <$cantidad ; $i++) { 
-  echo $i;
+  echo  "<img src='img/".$dado.".svg' >";
 }
 
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>
