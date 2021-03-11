@@ -25,11 +25,12 @@
 
 
 $cantidad= rand(3,12);
-$dado= rand(1,6);
 
 for ($i=0; $i <$cantidad ; $i++) { 
-  echo  "<img src='img/".$dado.".svg' >";
+    $dado= rand(1,6);
+    echo  "<img src='img/".$dado.".svg' >";
 }
+
 
 ?>
 
