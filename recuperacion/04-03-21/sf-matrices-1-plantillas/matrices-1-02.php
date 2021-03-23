@@ -28,10 +28,10 @@
 
 $foto = ["ballena", "caballito-mar", "camello", "cebra", "elefante", "hipopotamo", 
 "jirafa", "leon", "leopardo", "medusa", "mono", "oso-blanco", "oso", "pajaro", "pinguino", 
-"rinoceronte", "serpiente", "tigre", "tortiga-marina","tortuga"
+"rinoceronte", "serpiente", "tigre", "tortuga-marina","tortuga"
 ];
 
-$animal = rand(0, count($foto) - 1);
+$animal = rand(0, count($foto));
 
 echo "<img src='img/animales/".$foto[$animal].".svg' >";
 

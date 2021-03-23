@@ -26,12 +26,21 @@
 
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+$nombre = ["ballena", "caballito-mar", "camello", "cebra", "elefante", "hipopotamo", 
+"jirafa", "leon", "leopardo", "medusa", "mono", "oso-blanco", "oso", "pajaro", "pinguino", 
+"rinoceronte", "serpiente", "tigre", "tortuga-marina","tortuga"
+];
+
+$animal = rand(0, count($nombre));
+
+echo "$nombre[$animal]";
+
+echo "<img src='img/animales/".$nombre[$animal].".svg' >";
 
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>
