@@ -26,12 +26,26 @@
 
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+$numero = rand(2, 7);
+
+$dados = [];
+for ($i = 0; $i < $numero; $i++) {
+    $dados[$i] = rand(1, 6);
+}
+
+foreach ($dados as $dado) {
+  echo "<img src='img/".$dado.".svg' >";
+}
+
+echo "Los valores obtenidos son: ";
+foreach ($dados as $dado) {
+    echo "$dado ";
+}
 
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>
