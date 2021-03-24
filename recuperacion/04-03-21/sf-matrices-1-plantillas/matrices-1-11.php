@@ -39,7 +39,7 @@ foreach ($dados as $dado) {
 
 echo "Los valores obtenidos son: ";
 foreach ($dados as $dado) {
-    echo "$dado ";
+    echo $dado;
 }
 
 ?>

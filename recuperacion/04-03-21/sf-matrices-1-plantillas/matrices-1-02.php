@@ -26,15 +26,22 @@
 
 <?php
 
-$foto = ["ballena", "caballito-mar", "camello", "cebra", "elefante", "hipopotamo", 
+$foto = ["", "ballena", "caballito-mar", "camello", "cebra", "elefante", "hipopotamo", 
 "jirafa", "leon", "leopardo", "medusa", "mono", "oso-blanco", "oso", "pajaro", "pinguino", 
 "rinoceronte", "serpiente", "tigre", "tortuga-marina","tortuga"
 ];
 
-$animal = rand(0, count($foto));
+$animal = rand(1, count($foto));
 
 echo "<img src='img/animales/".$foto[$animal].".svg' >";
 
+"<ol>";
+foreach ($foto as $key => $value) {
+  echo "<li>";
+  echo $value;
+  echo "</li>";
+}
+"</ol>";
 ?>
 
   <footer>

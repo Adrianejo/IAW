@@ -33,8 +33,15 @@ echo "<img src='img/".$dado.".svg' >";
 
 echo "Has sacado un ".$numero[$dado]."";
 
-?>
+"<ol>";
+foreach ($numero as $key => $value) {
+  echo "<li>";
+  echo $value;
+  echo "</li>";
+}
+"</ol>";
 
+?>
   <footer>
     <p>Adrian Menaza</p>
   </footer>
