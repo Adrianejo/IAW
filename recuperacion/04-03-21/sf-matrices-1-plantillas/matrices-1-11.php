@@ -36,13 +36,13 @@ for ($i = 0; $i < $numero; $i++) {
     $resultados[]= $dados;
 }
 
-"<ol>";
 foreach ($resultados as $key => $value) {
-  echo "<li>";
-  echo $value;
-  echo "</li>";
-}
-"</ol>";
+  if ($value == 0) {
+    echo "1";
+  }if ($value == 1) {
+    echo "0";
+  }
+  
 ?>
 
   <footer>

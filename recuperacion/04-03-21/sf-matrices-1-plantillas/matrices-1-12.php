@@ -34,14 +34,16 @@ for ($i=0; $i < 10; $i++) {
   echo $bit;
   $resultados[]= $bit;
 }
-
-"<ol>";
+echo "<br>";
 foreach ($resultados as $key => $value) {
-  echo "<li>";
-  echo $value;
-  echo "</li>";
+  if ($value == 0) {
+    echo "1";
+  }
+  if ($value == 1) {
+    echo "0";
+  }
 }
-"</ol>";
+
 ?>
 
   <footer>
