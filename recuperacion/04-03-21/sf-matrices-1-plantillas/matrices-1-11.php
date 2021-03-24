@@ -29,19 +29,20 @@
 $numero = rand(2, 7);
 
 $dados = [];
+$resultados= [];
 for ($i = 0; $i < $numero; $i++) {
-    $dados[$i] = rand(1, 6);
+    $dados= rand(1, 6);
+    echo "<img src='img/".$dados.".svg' >";
+    $resultados[]= $dados;
 }
 
-foreach ($dados as $dado) {
-  echo "<img src='img/".$dado.".svg' >";
+"<ol>";
+foreach ($resultados as $key => $value) {
+  echo "<li>";
+  echo $value;
+  echo "</li>";
 }
-
-echo "Los valores obtenidos son: ";
-foreach ($dados as $dado) {
-    echo $dado;
-}
-
+"</ol>";
 ?>
 
   <footer>

@@ -26,12 +26,26 @@
 
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+$bit= [];
+$resultados= [];
 
+for ($i=0; $i < 10; $i++) { 
+  $bit= rand(0,1);
+  echo $bit;
+  $resultados[]= $bit;
+}
+
+"<ol>";
+foreach ($resultados as $key => $value) {
+  echo "<li>";
+  echo $value;
+  echo "</li>";
+}
+"</ol>";
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>
