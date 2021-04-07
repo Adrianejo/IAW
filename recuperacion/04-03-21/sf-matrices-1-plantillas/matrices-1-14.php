@@ -25,11 +25,33 @@
   <p>Actualice la página para mostrar una secuencia aleatoria de bits y su conversión a código de Gray.</p>
 
 <?php
+$numero = 10;
+$inicial = [];
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+for ($i = 0; $i < $numero; $i++) {
+    $inicial[$i] = rand(0, 1);
+}
 
+echo "B: ";
+foreach ($inicial as $bit) {
+    echo  $bit ;
+}
+
+$resultado = [];
+$resultado[0] = $inicial[0];
+for ($i = 0; $i < $numero - 1; $i++) {
+    if ($inicial[$i] == $inicial[$i+1]) {
+        $resultado[$i+1] = 0;
+    } else {
+        $resultado[$i+1] = 1;
+    }
+}
+
+echo "G: ";
+foreach ($resultado as $bit) {
+    echo  $bit;
+}
 ?>
-
   <footer>
     <p>Escriba aquí su nombre</p>
   </footer>

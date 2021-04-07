@@ -26,12 +26,54 @@
 
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+$numero = rand(2, 7);
+
+echo "<h2><br>Jugador 1</h2>";
+$dados1 = [];
+for ($i = 0; $i < $numero; $i++) {
+    $dados1[$i] = rand(1, 6);
+}
+
+foreach ($dados1 as $dado) {
+  echo "<img src='img/".$dados.".svg' >";
+}
+
+echo "<h2><br>Jugador 2</h2>";
+$dados2 = [];
+for ($i = 0; $i < $numero; $i++) {
+    $dados2[$i] = rand(1, 6);
+}
+
+foreach ($dados2 as $dado) {
+  echo "<img src='img/".$dados.".svg' >";
+}
+
+echo "<h2><br>Resultado</h2>";
+$gana1 = 0;
+$gana2 = 0;
+$empate = 0;
+for ($i = 0; $i < $numero; $i++) {
+    if ($dados1[$i] > $dados2[$i]) {
+        $gana1++;
+    } elseif ($dados1[$i] < $dados2[$i]) {
+        $gana2++;
+    } else {
+        $empate++;
+    }
+}
+
+if ($gana1 > $gana2) {
+    echo "  <p>En conjunto, ha ganado el jugador 1.</p>";
+} elseif ($gana1 < $gana2) {
+    echo "  <p>En conjunto, ha ganado el jugador 2.</p>";
+} else {
+    echo "  <p>En conjunto, han empatado.</p>";
+}
 
 ?>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>
