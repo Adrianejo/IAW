@@ -28,7 +28,7 @@
 
 $numero = rand(2, 7);
 
-$dados = [];
+$dados= [];
 $resultados= [];
 for ($i = 0; $i < $numero; $i++) {
     $dados= rand(1, 6);
