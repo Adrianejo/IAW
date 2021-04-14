@@ -32,6 +32,7 @@ else {
   echo "<p style='color:#FF0000'>Debes seleccionar una opcion</p>";
 }
 
+
 ?>
 
   <p><a href="controles-formularios-1-5-1.php">Volver al formulario.</a></p>

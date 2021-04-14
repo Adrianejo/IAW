@@ -25,7 +25,7 @@
 <?php
 
 echo "El tamaño de letra deseado es de: ".$_GET['ancho']. " </br>";
-echo ' <p style="font-size:'.$_GET['ancho'].'%">¡Hola!</p>';
+echo ' <p style="font-size:'.$_GET['ancho'].'%; border: black '.$_GET['grosor'].'px solid";>¡Hola!</p>';
 
 ?>
 

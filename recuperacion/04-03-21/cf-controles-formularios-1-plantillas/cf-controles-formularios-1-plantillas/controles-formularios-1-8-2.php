@@ -21,14 +21,14 @@
 
 if (isset($_GET['fondo']) & isset($_GET['letra'])) {
   
-  echo "<body style='".$_GET['letra']."; ".$_GET['fondo']."'>";
+  echo "<body style='color:".$_GET['letra']."; background-color:".$_GET['fondo']."'>";
 }
 elseif(isset($_GET['fondo'])) {
-  echo "<body style= ".$_GET['fondo'].">";
+  echo "<body style= background-color:".$_GET['fondo'].">";
 }
 
 elseif(isset($_GET['letra'])) {
-  echo "<body style=".$_GET['letra'].">";
+  echo "<body style= color:".$_GET['letra'].">";
 }
 
 if(!isset($_GET['fondo']) & !isset($_GET['letra'])) {
@@ -39,7 +39,6 @@ if(!isset($_GET['fondo']) & !isset($_GET['letra'])) {
 ?>
 </head>
 
-<body>
   <h1>Colores 2 (Resultado)</h1>
 
   <p>Se han cambiado los colores elegidos.</p>
