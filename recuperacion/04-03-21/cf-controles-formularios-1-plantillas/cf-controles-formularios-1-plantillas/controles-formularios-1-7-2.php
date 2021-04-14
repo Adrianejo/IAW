@@ -17,14 +17,28 @@
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="mclibre-php-ejercicios.css" title="Color">
-<?php
-
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
-
-?>
 </head>
 
-<body>
+
+<?php
+if (isset($_GET['fondo']) & isset($_GET['letra'])) {
+  
+  echo "<body style='color:red; background-color:green'>";
+}
+elseif(isset($_GET['fondo'])) {
+  echo "<body style= 'background-color:green'>";
+}
+
+elseif(isset($_GET['letra'])) {
+  echo "<body style='color:red'>";
+}
+
+if(!isset($_GET['fondo']) & !isset($_GET['letra'])) {
+  
+  echo "<body>";
+}
+
+?>
   <h1>Colores 2 (Resultado)</h1>
 
   <p>Se han cambiado los colores elegidos.</p>

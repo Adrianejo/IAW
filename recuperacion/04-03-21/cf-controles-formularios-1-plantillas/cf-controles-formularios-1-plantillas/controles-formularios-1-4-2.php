@@ -24,7 +24,12 @@
 
 <?php
 
-echo "La fruta escogida es: ".$_GET['fruta']. " </br>";
+if (isset($_GET['fruta'])) {
+  echo "La fruta escogida es: ".$_GET['fruta']. " </br>";
+}
+else {
+  echo "<p style='color:#FF0000'>Debes seleccionar una opcion</p>";
+}
 
 ?>
 

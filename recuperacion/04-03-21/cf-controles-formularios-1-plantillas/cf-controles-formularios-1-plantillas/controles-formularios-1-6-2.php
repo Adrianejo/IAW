@@ -23,8 +23,17 @@
   <h1>Colores 1 (Resultado)</h1>
 
 <?php
-echo "El fondo escogida es: ".$_GET['fondo']. " </br>";
-echo "La letra escogida es: ".$_GET['letra']. " </br>";
+if (isset($_GET['fondo'])) {
+  echo "Ha escogido cambiar el: ".$_GET['fondo']. " </br>";
+}
+
+if (isset($_GET['letra'])) {
+  echo "Ha escogido cambiar la: ".$_GET['letra']. " </br>";
+}
+if (!isset($_GET['fondo']) & !isset($_GET['letra'])) {
+  echo "<p style='color:#FF0000'>Debes seleccionar una opcion</p>";
+}
+
 
 ?>
 

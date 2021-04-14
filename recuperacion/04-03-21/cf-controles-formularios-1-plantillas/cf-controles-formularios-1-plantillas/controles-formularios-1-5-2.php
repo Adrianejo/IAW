@@ -25,8 +25,12 @@
   <p>Esta es su fruta favorita:</p>
 
 <?php
-
-echo "<img src='img\frutas/".$_GET['fruta'].".svg' >";
+if (isset($_GET['fruta'])) {
+  echo "<img src='img/frutas/".$_GET['fruta']."' >";
+}
+else {
+  echo "<p style='color:#FF0000'>Debes seleccionar una opcion</p>";
+}
 
 ?>
 

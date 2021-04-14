@@ -19,7 +19,22 @@
   <link rel="stylesheet" href="mclibre-php-ejercicios.css" title="Color">
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+if (isset($_GET['fondo']) & isset($_GET['letra'])) {
+  
+  echo "<body style='".$_GET['letra']."; ".$_GET['fondo']."'>";
+}
+elseif(isset($_GET['fondo'])) {
+  echo "<body style= ".$_GET['fondo'].">";
+}
+
+elseif(isset($_GET['letra'])) {
+  echo "<body style=".$_GET['letra'].">";
+}
+
+if(!isset($_GET['fondo']) & !isset($_GET['letra'])) {
+  
+  echo "<body>";
+}
 
 ?>
 </head>

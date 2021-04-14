@@ -21,7 +21,6 @@
 
 <body>
   <h1>Colores 2 (Formulario)</h1>
-
   <form action="controles-formularios-1-7-2.php" method="get">
     <p>Elija los colores a cambiar:<br>
 <?php
