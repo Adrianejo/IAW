@@ -24,7 +24,8 @@
 
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+echo "El tamaño de letra deseado es de: ".$_GET['ancho']. " </br>";
+echo ' <p style="font-size:'.$_GET['ancho'].'%">¡Hola!</p>';
 
 ?>
 
