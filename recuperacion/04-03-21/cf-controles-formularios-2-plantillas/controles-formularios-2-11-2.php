@@ -23,10 +23,13 @@
   <h1>Cuadrado con bordes redondeados (Resultado)</h1>
 
 <?php
-
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
-
+echo '<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+width="'.$_GET['lado'].'" height="'.$_GET['lado'].'" viewBox="0 0 120 100">
+<rect x="10" y="10" width="100" height="80" rx="'.$_GET['esquina'].'" ry="'.$_GET['esquina'].'"
+   fill="RoyalBlue" />
+</svg>';
 ?>
+
 
   <p><a href="controles-formularios-2-11-1.php">Volver al formulario.</a></p>
 
