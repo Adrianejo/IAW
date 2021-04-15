@@ -23,8 +23,33 @@
   <h1>Círculo o cuadrado (Resultado)</h1>
 
 <?php
+if (empty($_GET['lado']) & empty($_GET['forma1']) & empty($_GET['forma2'])) {
+  echo "<p style='color:#FF0000'>Debes de introducir valores a la tamaño y forma</p>";
+}
+elseif (empty($_GET['forma1'])) {
+  echo "<p style='color:#FF0000'>Debes de introducir la forma que desees</p>";
+}
+elseif (empty($_GET['forma2'])) {
+  echo "<p style='color:#FF0000'>Debes de introducir la forma que desees</p>";
+}
+elseif (empty($_GET['lado'])) {
+  echo "<p style='color:#FF0000'>Debes de introducir valor al lado</p>";
+}
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+if (isset($_GET['forma1'])) {
+  echo '<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+  width="'.$_GET['lado'].'" height="'.$_GET['lado'].'" viewBox="0 0 120 100">
+  <rect x="10" y="10" width="100" height="80"
+     fill="RoyalBlue" />
+  </svg>';
+}
+elseif (isset($_GET['forma2'])) {
+  echo '<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+  width="'.$_GET['lado'].'" height="'.$_GET['lado'].'" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="50"
+       fill="RoyalBlue" />
+  </svg>';
+}
 
 ?>
 

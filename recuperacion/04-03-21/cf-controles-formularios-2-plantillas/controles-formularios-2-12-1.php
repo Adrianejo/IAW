@@ -19,8 +19,8 @@
 
     <p>
       Forma de la figura:
-      <label><input type="radio" name="forma" value="cuadrado">Cuadrado</label>
-      <label><input type="radio" name="forma" value="circulo">Círculo </label>
+      <label><input type="radio" name="forma1" value="cuadrado">Cuadrado</label>
+      <label><input type="radio" name="forma2" value="circulo">Círculo </label>
     </p>
 
     <p>
