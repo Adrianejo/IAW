@@ -23,8 +23,25 @@
   <h1>Datos personales 3 (Resultado)</h1>
 
 <?php
+if(empty($_GET['genero'])) {
+  echo "<p style='color:#FF0000'>Debes de rellenar el campo de sexo</p>";
+}
+elseif(isset($_GET['genero'])) {
+  echo "El sexo es : ".$_GET['genero']. " </br>";
+}
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+if(empty($_GET['cine']) & empty($_GET['literartura']) & empty($_GET['musica'])) {
+  echo "<p style='color:#FF0000'>No se ha declarado ninguna aficion</p>";
+}
+elseif(isset($_GET['cine'])) {
+  echo "Le gusta el : ".$_GET['cine']. " </br>";
+}
+elseif(isset($_GET['literatura'])) {
+  echo "Le gusta la : ".$_GET['literartura']. " </br>";
+}
+elseif(isset($_GET['musica'])) {
+  echo "Le gusta la : ".$_GET['musica']. " </br>";
+}
 
 ?>
 

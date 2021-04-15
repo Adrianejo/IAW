@@ -24,7 +24,13 @@
 
 <?php
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+if(empty($_GET['recibir'])) {
+  echo "<p style='color:#FF0000'>Debes decir si quieres recibir correos o no</p>";
+}
+elseif(isset($_GET['recibir'])) {
+  echo "Quiere recibir correos?? Respuesta: ".$_GET['recibir']. " </br>";
+}
+
 
 ?>
 

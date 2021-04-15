@@ -23,8 +23,19 @@
   <h1>Datos personales 2 (Resultado)</h1>
 
 <?php
+if(empty($_GET['edad'])) {
+  echo "<p style='color:#FF0000'>Debes de rellenar el campo de edad</p>";
+}
+elseif(isset($_GET['edad'])) {
+  echo "La edad es : ".$_GET['edad']. " </br>";
+}
+if(empty($_GET['peso'])) {
+  echo "<p style='color:#FF0000'>Debes de rellenar el campo de peso</p>";
+}
+elseif(isset($_GET['peso'])) {
+  echo "El peso es : ".$_GET['peso']. " </br>";
+}
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
 
 ?>
 

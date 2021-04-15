@@ -23,26 +23,25 @@
   <h1>Datos personales 1 (Resultado)</h1>
 
 <?php
-if (isset($_GET['nombre'])) {
-  echo "El nombre es: ".$_GET['nombre']. " </br>";
+if(empty($_GET['nombre'])) {
+  echo "<p style='color:#FF0000'>Debes de rellenar el campo de nombre</p>";
 }
-else {
-  echo "<p style='color:#FF0000'>Debes poner algo en este campo</p>";
+elseif(isset($_GET['nombre'])) {
+  echo "El nombre es : ".$_GET['nombre']. " </br>";
 }
-if (isset($_GET['apellidos'])) {
-  echo "El apellido es: ".$_GET['apellidos']. " </br>";
+if(empty($_GET['apellidos'])) {
+  echo "<p style='color:#FF0000'>Debes de rellenar el campo de apellidos</p>";
 }
-else {
-  echo "<p style='color:#FF0000'>Debes poner algo en este campo</p>";
+elseif(isset($_GET['apellidos'])) {
+  echo "El apellido es : ".$_GET['apellidos']. " </br>";
 }
-
 
 ?>
 
   <p><a href="controles-formularios-2-01-1.php">Volver al formulario.</a></p>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>
