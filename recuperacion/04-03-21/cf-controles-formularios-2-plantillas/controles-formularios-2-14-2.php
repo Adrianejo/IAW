@@ -30,7 +30,47 @@ elseif (isset($_GET['nombre'])) {
   echo "El nombre es : ".$_GET['nombre']. " </br>";
 }
 
+if (empty($_GET['apellidos'])) {
+  echo "<p style='color:#FF0000'>Debes de introducir un apellido</p>";
+}
+elseif (isset($_GET['apellidos'])) {
+  echo "El apellido es : ".$_GET['apellidos']. " </br>";
+}
 
+if (empty($_GET['edad'])) {
+  echo "<p style='color:#FF0000'>Debes de seleccionar una edad</p>";
+}
+elseif (isset($_GET['edad'])) {
+  echo "Su rango de edad esta : ".$_GET['edad']. " </br>";
+}
+
+if (empty($_GET['peso'])) {
+  echo "<p style='color:#FF0000'>Debes de introducir un peso</p>";
+}
+elseif (isset($_GET['peso'])) {
+  echo "Su peso es de : ".$_GET['peso']. " </br>";
+}
+
+if (empty($_GET['genero'])) {
+  echo "<p style='color:#FF0000'>Debes de seleccionar una genero</p>";
+}
+elseif (isset($_GET['genero'])) {
+  echo "Su genero es : ".$_GET['genero']. " </br>";
+}
+
+if (empty($_GET['estadoCivil'])) {
+  echo "<p style='color:#FF0000'>Debes de seleccionar un estado civil</p>";
+}
+elseif (isset($_GET['estadoCivil'])) {
+  echo "Su estado civil es : ".$_GET['estadoCivil']. " </br>";
+}
+
+if (empty($_GET['estadoCivil'])) {
+  echo "<p style='color:#FF0000'>Debes de seleccionar un estado civil</p>";
+}
+elseif (isset($_GET['estadoCivil'])) {
+  echo "Su estado civil es : ".$_GET['estadoCivil']. " </br>";
+}
 ?>
 
   <p><a href="controles-formularios-2-14-1.php">Volver al formulario.</a></p>
