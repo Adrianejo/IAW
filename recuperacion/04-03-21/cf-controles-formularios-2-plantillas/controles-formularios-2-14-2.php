@@ -23,8 +23,13 @@
   <h1>Datos personales 5 (Resultado)</h1>
 
 <?php
+if (empty($_GET['nombre'])) {
+  echo "<p style='color:#FF0000'>Debes de introducir un nombre</p>";
+}
+elseif (isset($_GET['nombre'])) {
+  echo "El nombre es : ".$_GET['nombre']. " </br>";
+}
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
 
 ?>
 

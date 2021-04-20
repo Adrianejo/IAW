@@ -23,8 +23,27 @@
   <h1>Gradiente en cuadrado (Resultado)</h1>
 
 <?php
-
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+if (empty($_GET['lado'])) {
+  echo "<p style='color:#FF0000'>Debes de introducir un tamaño para la figura</p>";
+}
+elseif (empty($_GET['inicial'])) {
+  echo "<p style='color:#FF0000'>Debes de introducir el color inicial</p>";
+}
+elseif (empty($_GET['final'])) {
+  echo "<p style='color:#FF0000'>Debes de introducir el color final</p>";
+}
+elseif (isset($_GET['lado']) & isset($_GET['inicial']) & isset($_GET['final'])) {
+  echo '<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+width="'.$_GET['lado'].'" height="'.$_GET['lado'].'" viewBox="0 0 120 100">
+<defs>
+<linearGradient id="gradiente">
+  <stop offset="5%" stop-color="'.$_GET['inicial'].'" />
+  <stop offset="95%" stop-color="'.$_GET['final'].'" />
+</linearGradient>
+</defs>
+<rect fill="url(#gradiente)" stroke="black" stroke-width="10" x="5" y="5" width="200" height="200" />
+</svg>';
+}
 
 ?>
 
