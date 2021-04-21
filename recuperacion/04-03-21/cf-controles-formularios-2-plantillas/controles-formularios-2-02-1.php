@@ -15,9 +15,9 @@
   <h1>Datos personales 2 (Formulario)</h1>
 
   <form action="controles-formularios-2-02-2.php" method="get">
-    <p><label>Escriba su edad: <input type="number" name="edad" min="5" max="130"></label></p>
+    <p><label>Escriba su edad: <input type="number" name="edad" min="1" max="190"></label></p>
 
-    <p><label>Escriba su peso: <input type="number" name="peso" step="0.1" min="10" max="150"></label></p>
+    <p><label>Escriba su peso: <input type="number" name="peso" step="0.1" min="1" max="200"></label></p>
 
     <p>
       <input type="submit" value="Enviar">

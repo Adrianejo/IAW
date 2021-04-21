@@ -36,10 +36,10 @@
             <strong>Edad:</strong><br>
             <select name="edad">
               <option>...</option>
-              <option value="1">Menos de 20 años</option>
-              <option value="2">Entre 20 y 39 años</option>
-              <option value="3">Entre 40 y 59 años</option>
-              <option value="4">60 años o más</option>
+              <option value="Menos de 20 años">Menos de 20 años</option>
+              <option value="Entre 20 y 39 años">Entre 20 y 39 años</option>
+              <option value="Entre 40 y 59 años">Entre 40 y 59 años</option>
+              <option value="60 años o más">60 años o más</option>
             </select>
           </td>
         </tr>

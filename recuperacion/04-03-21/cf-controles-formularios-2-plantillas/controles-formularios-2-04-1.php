@@ -22,9 +22,9 @@
     <p>
       Indique si quiere recibir correos nuestros:
       <select name="recibir">
-        <option value="-1">...</option>
-        <option value="1">Sí</option>
-        <option value="0">No</option>
+        <option value="Sin respuesta">...</option>
+        <option value="Si">Sí</option>
+        <option value="No">No</option>
       </select>
     </p>
 

@@ -5,6 +5,7 @@
  * @author Escriba aquí su nombre
  *
  */
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -23,25 +24,26 @@
   <h1>Datos personales 1 (Resultado)</h1>
 
 <?php
-if(empty($_GET['nombre'])) {
-  echo "<p style='color:#FF0000'>Debes de rellenar el campo de nombre</p>";
+if (isset($_POST['nombre'])) {
+  $_SESSION['nombre'] = $_POST['nombre'];
+  var_dump($_POST['nombre']);die;
 }
-elseif(isset($_GET['nombre'])) {
-  echo "El nombre es : ".$_GET['nombre']. " </br>";
+else {
+  echo "<p style='color:#FF0000'>Debes poner algo en este campo</p>";
 }
-if(empty($_GET['apellidos'])) {
-  echo "<p style='color:#FF0000'>Debes de rellenar el campo de apellidos</p>";
+if (isset($_POST['apellidos'])) {
+  $_SESSION['apellidos'] = $_POST['apellidos'];
 }
-elseif(isset($_GET['apellidos'])) {
-  echo "El apellido es : ".$_GET['apellidos']. " </br>";
+else {
+  echo "<p style='color:#FF0000'>Debes poner algo en este campo</p>";
 }
-
+header("Location:controles-formularios-2-01-1.php");
 ?>
 
   <p><a href="controles-formularios-2-01-1.php">Volver al formulario.</a></p>
-
+header()
   <footer>
-    <p>Adrian Menaza</p>
+    <p>Escriba aquí su nombre</p>
   </footer>
 </body>
 </html>

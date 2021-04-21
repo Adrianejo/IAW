@@ -33,14 +33,19 @@ elseif(isset($_GET['genero'])) {
 if(empty($_GET['cine']) & empty($_GET['literartura']) & empty($_GET['musica'])) {
   echo "<p style='color:#FF0000'>No se ha declarado ninguna aficion</p>";
 }
-elseif(isset($_GET['cine'])) {
-  echo "Le gusta el : ".$_GET['cine']. " </br>";
+
+
+if(isset($_GET['cine'])) {
+  echo "Le gusta el cine </br>";
+
 }
-elseif(isset($_GET['literatura'])) {
-  echo "Le gusta la : ".$_GET['literartura']. " </br>";
+if(isset($_GET['literatura'])) {
+  echo "Le gusta el literatura </br>";
+
 }
-elseif(isset($_GET['musica'])) {
-  echo "Le gusta la : ".$_GET['musica']. " </br>";
+if(isset($_GET['musica'])) {
+  echo "Le gusta el musica </br>";
+
 }
 
 ?>

@@ -23,6 +23,23 @@
   <h1>Datos personales 4 (Resultado)</h1>
 
 <?php
+if(empty($_GET['correo'])){
+  echo "<p style='color:#FF0000'>Falta su correo electronico</p>";
+}
+if(empty($_GET['correo2'])){
+  echo "<p style='color:#FF0000'>Falta confirmar su correo electronico</p>";
+}
+
+if(isset($_GET['correo']) && $_GET['correo'] != ""  && isset($_GET['correo2']) && $_GET['correo2'] != ""){
+  if ($_GET['correo'] == $_GET['correo2']) {
+    echo "Su direccion de correo es ".$_GET['correo']. " </br>";
+  }
+  else {
+    echo "<p style='color:#FF0000'>Los correos no coinciden</p>";
+  }
+
+}
+
 
 if(empty($_GET['recibir'])) {
   echo "<p style='color:#FF0000'>Debes decir si quieres recibir correos o no</p>";

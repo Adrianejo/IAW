@@ -26,13 +26,26 @@
 if(empty($_GET['edad'])) {
   echo "<p style='color:#FF0000'>Debes de rellenar el campo de edad</p>";
 }
-elseif(isset($_GET['edad'])) {
+elseif($_GET['edad'] > 130) {
+  echo "<p style='color:#FF0000'>Debes de introducir un valor menor que 130</p>";
+}
+elseif($_GET['edad'] < 5) {
+  echo "<p style='color:#FF0000'>Debes de introducir un valor mayor que 5</p>";
+}
+else{
   echo "La edad es : ".$_GET['edad']. " </br>";
 }
+
 if(empty($_GET['peso'])) {
   echo "<p style='color:#FF0000'>Debes de rellenar el campo de peso</p>";
 }
-elseif(isset($_GET['peso'])) {
+elseif($_GET['peso'] > 150) {
+  echo "<p style='color:#FF0000'>Debes de introducir un valor menor que 150</p>";
+}
+elseif($_GET['peso'] < 10) {
+  echo "<p style='color:#FF0000'>Debes de introducir un valor mayor que 10</p>";
+}
+else{
   echo "El peso es : ".$_GET['peso']. " </br>";
 }
 
