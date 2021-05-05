@@ -21,13 +21,19 @@
  $dado1 = $_SESSION['dado1'];
  $dado2 = $_SESSION['dado2'];
  $dado3 = $_SESSION['dado3'];
-
+ $total=  $dado1 + $dado2 + $dado3;
 
 echo "<img src='img/".$dado1.".svg' >";
 echo "<img src='img/".$dado2.".svg' >"; 
 echo "<img src='img/".$dado3.".svg' >";
+if ($total > 9) {
+  echo "Total conseguido:<b>".$total."</b>";
+}
+else {
+  echo "Total conseguido:".$total."";
+}
+
 ?>
-<p>Valor Total conseguido: <?php echo $dado1 + $dado2 + $dado3; ?></p>
 <p>
   <a href="tirada-dados-1.php">Volver a tirar</a>
 </p>

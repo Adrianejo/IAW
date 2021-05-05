@@ -10,5 +10,5 @@ if(isset($_POST['accion'])){
         $_SESSION['total'] = $_SESSION['total'] + $_SESSION['dado'];
     }
 }
-
+header('Location: suma-resta-1.php');
 ?>
