@@ -22,8 +22,34 @@
   <h1>Dibujos comunes (Resultado)</h1>
 
 <?php
+$cantidad = $_GET['cantidad'];
+$tipo = $_GET['tipo'];
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+for ($i=1; $i <= $cantidad ; $i++) { 
+  $animales = rand(128005, 128024);
+  $animales1 = rand(128005, 128024);
+
+
+  if (isset($tipo)) {
+    echo "<p style=font-size: 400%; margin: 0;>&#$animales; </p>";
+    echo "<p style=font-size: 400%; margin: 0;>&#$animales1; </p>";
+  }
+  else {
+    for ($i=1; $i <= $cantidad ; $i++) { 
+      $reloges = rand(128336, 128355);
+      $reloges1 = rand(128336, 128355);
+  
+        if (isset($tipo)) {
+          echo "<p style=font-size: 400%; margin: 0;>&#$reloges; </p>";
+          echo "<p style=font-size: 400%; margin: 0;>&#$reloges1; </p>";
+        }
+    }
+  }
+}
+  
+
+
+
 
 ?>
   <p><a href="dibujos-comunes-1.php">Volver al formulario.</a></p>

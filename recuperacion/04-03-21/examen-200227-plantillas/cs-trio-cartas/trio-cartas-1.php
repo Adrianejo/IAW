@@ -20,25 +20,13 @@ session_start();
 
   <form action="trio-cartas-2.php">
 <?php
-$carta1 = rand(1,10);
-$carta2 = rand(1,10);
-$carta3 = rand(1,10);
-$_SESSION['carta1'] = $carta1;
-$_SESSION['carta2'] = $carta2;
-$_SESSION['carta3'] = $carta3;
-    
+
+if (empty($_SESSION['carta1']) & empty($_SESSION['carta2']) & empty($$_SESSION['carta3'])) {
+  echo '<img src="img/c'.$_SESSION['carta1'].'.svg" alt="10" width="100" height="100">';
+  echo '<img src="img/c'.$_SESSION['carta2'].'.svg" alt="10" width="100" height="100">';
+  echo '<img src="img/c'.$_SESSION['carta3'].'.svg" alt="10" width="100" height="100">';
+}
 ?>
-<p>
-  <button type="submit" name="cambia" value="1">
-    <img src="<?php echo "img/c".$_SESSION['carta1'].".svg"; ?>" alt="10" width="140" height="140">
-  </button>
-  <button type="submit" name="cambia" value="2">
-    <img src="<?php echo "img/c".$_SESSION['carta2'].".svg"; ?>" alt="10" width="140" height="140">
-  </button>
-  <button type="submit" name="cambia" value="3">
-    <img src="<?php echo "img/c".$_SESSION['carta3'].".svg"; ?>" alt="10" width="140" height="140">
-  </button>
-</p>
 
   </form>
 
