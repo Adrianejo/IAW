@@ -34,7 +34,7 @@
           <td><strong>Tipo de dibujos:</strong></td>
           <td>
             <select name="tipo">
-              <option value="">...</option>
+              <option value="vacio">...</option>
               <option value="animales">Animales</option>
               <option value="relojes">Relojes</option>
               <option value="emoticonos">Emoticonos</option>
