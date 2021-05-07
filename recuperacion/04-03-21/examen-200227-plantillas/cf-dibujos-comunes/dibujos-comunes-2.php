@@ -22,29 +22,29 @@
   <h1>Dibujos comunes (Resultado)</h1>
 
 <?php
-$cantidad = $_GET['cantidad'];
-$tipo = $_GET['tipo'];
 
-for ($i=1; $i <= $cantidad ; $i++) { 
+for ($i=0; $i <= $_GET['cantidad'] ; $i++) { 
   $animales = rand(128005, 128024);
   $animales1 = rand(128005, 128024);
+  $relojes = rand(128336, 128355);
+  $relojes1 = rand(128336, 128355);
+  $emoticonos = rand(128512, 128531);
+  $emoticonos1 = rand(128512, 128531);
 
 
-  if (isset($tipo)) {
+  if ($_GET['tipo'] == "animales") {
     echo "<p style=font-size: 400%; margin: 0;>&#$animales; </p>";
     echo "<p style=font-size: 400%; margin: 0;>&#$animales1; </p>";
   }
-  else {
-    for ($i=1; $i <= $cantidad ; $i++) { 
-      $reloges = rand(128336, 128355);
-      $reloges1 = rand(128336, 128355);
-  
-        if (isset($tipo)) {
-          echo "<p style=font-size: 400%; margin: 0;>&#$reloges; </p>";
-          echo "<p style=font-size: 400%; margin: 0;>&#$reloges1; </p>";
-        }
-    }
+  elseif ($_GET['tipo'] == "relojes") {
+    echo "<p style=font-size: 400%; margin: 0;>&#$relojes; </p>";
+    echo "<p style=font-size: 400%; margin: 0;>&#$relojes1; </p>";
   }
+  elseif ($_GET['tipo'] == "emoticonos") {
+    echo "<p style=font-size: 400%; margin: 0;>&#$emoticonos; </p>";
+    echo "<p style=font-size: 400%; margin: 0;>&#$emoticonos1; </p>";
+  }
+  
 }
   
 
@@ -55,7 +55,7 @@ for ($i=1; $i <= $cantidad ; $i++) {
   <p><a href="dibujos-comunes-1.php">Volver al formulario.</a></p>
 
   <footer>
-    <p>Escriba aquí su nombre</p>
+    <p>Adrian Menaza</p>
   </footer>
 </body>
 </html>

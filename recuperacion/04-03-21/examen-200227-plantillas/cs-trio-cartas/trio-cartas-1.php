@@ -21,13 +21,15 @@ session_start();
   <form action="trio-cartas-2.php">
 <?php
 
-if (empty($_SESSION['carta1']) & empty($_SESSION['carta2']) & empty($$_SESSION['carta3'])) {
-  echo '<img src="img/c'.$_SESSION['carta1'].'.svg" alt="10" width="100" height="100">';
-  echo '<img src="img/c'.$_SESSION['carta2'].'.svg" alt="10" width="100" height="100">';
-  echo '<img src="img/c'.$_SESSION['carta3'].'.svg" alt="10" width="100" height="100">';
-}
 ?>
+<p>Haga clic en una de las cartas para cambiarla. El juego termina cuando obtenga tres cartas iguales.</p>
 
+<p>
+  <button type="submit" name="cambia" value="1">
+    <img src="<?php echo "img/c".$_SESSION['carta'].".svg"; ?>" alt="4" width="140" height="140">
+  </button>
+
+</p>
   </form>
 
   <footer>
