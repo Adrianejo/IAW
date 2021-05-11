@@ -45,16 +45,21 @@ for ($i=1; $i <= 2; $i++) {
   $palosacado3 = $palo[rand(0,3)];
   $numero3= rand(1,10);
   echo '<img src="img/'.$palosacado3.$numero3.'.svg" alt="8" width="100">';
+
   if ($numero3 == $numero1) {
     $totaljugadora= $totaljugadora + $numero3;
-    echo "<p>El jugador A tiene $totaljugadora puntos</p>";
   }
   if ($numero3 == $numero2) {
-    $totaljugadorb= $totaljugadorb + $numero3;
-    echo "<p>El jugador B tiene $totaljugadorb puntos</p>";
+  $totaljugadorb= $totaljugadorb + $numero3;
+  }
+  if ($totaljugadora > $totaljugadorb) {
+    $ganador = "Jugador A";
+  }
+  else {
+    $ganador = "Jugador B";
   }
 }
-
+echo "<p>Jugador A: $totaljugadora puntos. Jugador B: $totaljugadorb puntos.  ¡Ha ganado el $ganador!</p>";
 
 
 
