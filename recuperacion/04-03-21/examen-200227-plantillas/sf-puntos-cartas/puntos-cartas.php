@@ -27,38 +27,48 @@
 $palo= ["c","p","d","t"];
 $totaljugadora= 0;
 $totaljugadorb= 0;
+$palosacado3 = $palo[rand(0,3)];
+$numero3= rand(1,10);
+$palosacado4 = $palo[rand(0,3)];
+$numero4= rand(1,10);
 
 echo "<p><h2>Jugador A</h2></p>";
 for ($i=1; $i <= 7; $i++) { 
   $palosacado1 = $palo[rand(0,3)];
   $numero1= rand(1,10);
   echo '<img src="img/'.$palosacado1.$numero1.'.svg" alt="8" width="100">';
+  if ($numero3 == $numero1) {
+    $totaljugadora= $totaljugadora + $numero3;
+  }
+  if ($numero4 == $numero1) {
+    $totaljugadora= $totaljugadora + $numero4;
+  }
 }
 echo "<p><h2>Jugador B</h2></p>";
 for ($i=1; $i <= 7; $i++) { 
   $palosacado2 = $palo[rand(0,3)];
   $numero2= rand(1,10);
   echo '<img src="img/'.$palosacado2.$numero2.'.svg" alt="8" width="100">';
+  if ($numero3 == $numero2) {
+    $totaljugadorb= $totaljugadorb + $numero3;
+    }
+    if ($numero4 == $numero1) {
+      $totaljugadora= $totaljugadora + $numero4;
+    }
 }
 echo "<p><h2>Cartas ganadoras</h2></p>";
-for ($i=1; $i <= 2; $i++) { 
-  $palosacado3 = $palo[rand(0,3)];
-  $numero3= rand(1,10);
-  echo '<img src="img/'.$palosacado3.$numero3.'.svg" alt="8" width="100">';
+echo '<img src="img/'.$palosacado3.$numero3.'.svg" alt="8" width="100">';
+echo '<img src="img/'.$palosacado4.$numero4.'.svg" alt="8" width="100">';
 
-  if ($numero3 == $numero1) {
-    $totaljugadora= $totaljugadora + $numero3;
-  }
-  if ($numero3 == $numero2) {
-  $totaljugadorb= $totaljugadorb + $numero3;
-  }
-  if ($totaljugadora > $totaljugadorb) {
+ if ($totaljugadora > $totaljugadorb) {
     $ganador = "Jugador A";
-  }
+ }
   else {
     $ganador = "Jugador B";
   }
-}
+  if ($totaljugadora == 0 && $totaljugadorb == 0) {
+    $gaandor= "don nadie";
+  }
 echo "<p>Jugador A: $totaljugadora puntos. Jugador B: $totaljugadorb puntos.  ¡Ha ganado el $ganador!</p>";
 
 
