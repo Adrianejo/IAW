@@ -24,8 +24,39 @@
   <p>Cada jugador saca 7 cartas (que se pueden repetir). Además se sacan dos cartas "ganadoras". Si el número de una carta (no el palo) de un jugador coincide con alguna de las dos cartas, el jugador acumula el valor de la carta en puntos. El jugador que acumula más puntos, gana.</p>
 
 <?php
+$palo= ["c","p","d","t"];
+$totaljugadora= 0;
+$totaljugadorb= 0;
 
-print "  <p class=\"aviso\">Ejercicio incompleto</p>\n";
+echo "<p><h2>Jugador A</h2></p>";
+for ($i=1; $i <= 7; $i++) { 
+  $palosacado1 = $palo[rand(0,3)];
+  $numero1= rand(1,10);
+  echo '<img src="img/'.$palosacado1.$numero1.'.svg" alt="8" width="100">';
+}
+echo "<p><h2>Jugador B</h2></p>";
+for ($i=1; $i <= 7; $i++) { 
+  $palosacado2 = $palo[rand(0,3)];
+  $numero2= rand(1,10);
+  echo '<img src="img/'.$palosacado2.$numero2.'.svg" alt="8" width="100">';
+}
+echo "<p><h2>Cartas ganadoras</h2></p>";
+for ($i=1; $i <= 2; $i++) { 
+  $palosacado3 = $palo[rand(0,3)];
+  $numero3= rand(1,10);
+  echo '<img src="img/'.$palosacado3.$numero3.'.svg" alt="8" width="100">';
+  if ($numero3 == $numero1) {
+    $totaljugadora= $totaljugadora + $numero3;
+    echo "<p>El jugador A tiene $totaljugadora puntos</p>";
+  }
+  if ($numero3 == $numero2) {
+    $totaljugadorb= $totaljugadorb + $numero3;
+    echo "<p>El jugador B tiene $totaljugadorb puntos</p>";
+  }
+}
+
+
+
 
 ?>
   <footer>

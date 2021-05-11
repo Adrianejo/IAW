@@ -55,8 +55,7 @@ else {
       echo "<p style=font-size: 400%; margin: 0;>&#$emoticonos </p>";
       echo "<p style=font-size: 400%; margin: 0;>&#$emoticonos1 </p>";
     }
-   
-    
+     
   }
 }
 if ($animales1 != $animales) {
