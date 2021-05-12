@@ -1,6 +1,17 @@
 <?php
 session_start();
-
+if (!isset($_SESSION['carta1'])) {
+  $carta1 = rand(1,10);
+  $_SESSION['carta1'] = $carta1;
+}
+if (!isset($_SESSION['carta2'])) {
+  $carta2 = rand(1,10);
+  $_SESSION['carta2'] = $carta2;
+}
+if (!isset($_SESSION['carta3'])) {
+  $carta3 = rand(1,10);
+  $_SESSION['carta3'] = $carta3;
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -26,10 +37,17 @@ session_start();
 
 <p>
   <button type="submit" name="cambia" value="1">
-    <img src="<?php echo "img/c".$_SESSION['carta'].".svg"; ?>" alt="4" width="140" height="140">
+    <img src="<?php echo "img/c".$_SESSION['carta1'].".svg"; ?>" alt="4" width="140" height="140">
+  </button>
+  <button type="submit" name="cambia" value="2">
+    <img src="<?php echo "img/c".$_SESSION['carta2'].".svg"; ?>" alt="4" width="140" height="140">
+  </button>
+  <button type="submit" name="cambia" value="3">
+    <img src="<?php echo "img/c".$_SESSION['carta3'].".svg"; ?>" alt="4" width="140" height="140">
   </button>
 
 </p>
+<p>Cambios de cartas realizados: 3</p>
   </form>
 
   <footer>

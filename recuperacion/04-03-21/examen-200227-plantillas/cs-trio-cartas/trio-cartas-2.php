@@ -1,10 +1,15 @@
 <?php
 session_start();
-$carta= rand(1,10);
-$_SESSION['carta'] = $carta;
 
-if (!isset($_SESSION['cambia'])) {
-    echo "<img src='img/c".$_SESSION['carta'].".svg' >";
+if ($_POST['cambia'] = ['1']) {
+    $_SESSION['carta1'] = rand(1,10);
+}
+
+if ($_POST['cambia'] = ['2']) {
+    $_SESSION['carta2'] = rand(1,10);
+}
+if ($_POST['cambia'] = ['3']) {
+    $_SESSION['carta3'] = rand(1,10);
 }
 
 header('Location: trio-cartas-1.php');
